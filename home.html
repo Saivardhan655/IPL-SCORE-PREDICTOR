@@ -1,0 +1,20 @@
+<html>
+    <body>
+        <div class="login">
+            <h1>IPL SCOREPREDICTOR</h1>
+            <form action="{{url_for('predict_datapoint')}}" method="post">
+                <input type="text" name="Batting team" placeholder="Batting team" required="required" /><br>
+                <input type="text" name="Bowling team" placeholder="Bowling team" required="required" /><br>
+                <input type="text" name="enter no of runs scored by team" placeholder="enter no of runs scored by team" required="required" /><br>
+                <input type="text" name="Enter no Wickets" placeholder="Enter no Wickets" required="required" /><br>
+                <input type="text" name="enter no of overs completed" placeholder="enter no of overs completed" required="required" /><br>
+                <input type="text" name="Enter no of runs scored in last 5 overs" placeholder="Enter no of runs scored in last 5 overs" required="required" /><br>
+                <input type="text" name="Enter no of wickets in last 5 overs" placeholder="Enter no of wickets in last 5 overs" required="required" /><br>
+
+                <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+                </form>
+        <h2>
+            The Score Would Be {{result}}
+        </h2>
+    </body>
+</html>
